@@ -1,0 +1,15 @@
+{
+  "name": "joem/vulcan-framework",
+  "authors": [
+    {
+      "name": "Joe",
+      "email": "joe45moses@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Vulcan\\": "src/"
+    }
+  }
+}
