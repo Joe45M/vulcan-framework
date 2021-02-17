@@ -16,7 +16,7 @@ class Register {
 			if ( class_exists( 'Resource\Shortcode\\' . $class ) ) {
 				$classFQN     = 'Resource\Shortcode\\' . $class;
 				$class        = new $classFQN;
-				$shortcodes[] = [ $classFQN::$shortcode, [ $class::class, 'register' ] ];
+				$shortcodes[] = [ $classFQN::$shortcode, [ $class, 'register' ] ];
 
 			}
 		}
