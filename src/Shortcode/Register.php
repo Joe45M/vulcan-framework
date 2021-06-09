@@ -6,10 +6,10 @@ namespace Vulcan\Shortcode;
 
 class Register {
 	public static function bind() {
-
 		$shortcodes = [];
 		foreach ( glob( get_config( 'path' ) . 'resources/Shortcode/*.php' ) as $file ) {
 			require_once $file;
+
 
 			$class = basename( $file, '.php' );
 
@@ -21,8 +21,8 @@ class Register {
 			}
 		}
 
-		foreach ($shortcodes as $shortcode) {
-			add_shortcode($shortcode[0], $shortcode[1]);
+		foreach ( $shortcodes as $shortcode ) {
+			add_shortcode( $shortcode[0], $shortcode[1] );
 		}
 	}
 }
